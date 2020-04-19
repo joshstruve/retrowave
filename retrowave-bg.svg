@@ -1,0 +1,25 @@
+<svg id="Group_2" data-name="Group 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="549.074" viewBox="0 0 1920 549.074">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="0.845" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d40078"/>
+      <stop offset="0.374" stop-color="#024dbe"/>
+      <stop offset="1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="0.622" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#035ee8"/>
+      <stop offset="1" stop-color="#a2c7ff"/>
+    </linearGradient>
+  </defs>
+  <rect id="sky" width="1920" height="549" transform="translate(1920 549) rotate(180)" fill="url(#linear-gradient)"/>
+  <circle id="sun" cx="175" cy="175" r="175" transform="translate(1135 549) rotate(180)" fill="url(#linear-gradient-2)"/>
+  <g id="mountains" transform="translate(0 2)">
+    <path id="Subtraction_2" data-name="Subtraction 2" d="M1743.681,226H0L222.667,74.425l105.382,71.736,54.118-40.876L444.9,152.672l71.762-43.756,48.374,29.5L686.667,52.643,744.392,93.35,851.167,0,990.811,122.088l106.356-58.554,164.66,90.654,59.839-40.734,105.382,71.736,54.118-40.876L1543.9,191.7l71.762-43.756L1743.682,226h0Z" transform="translate(109.333 291)" fill="#022f72"/>
+  </g>
+  <g id="city" transform="translate(0 -211)">
+    <path id="layer_2" data-name="layer 2" d="M59,550.982V522.909l19-15H89v-8H99l18,8v6h9l12,14v-15h14l1-36,10-6h11v7h4v-14h14l7,8v43h8v8h10v-63l11-7h26v8h13l-1,60,53,1v-88l7-8h14v7h10l-1,87h9l1-78h6v-9h18l7,7v47h24l41-16v47h13l41-31-1,28,21,1,1-52,7-9h15v8h16l14,9v46h9v-33h6v-9h16l10,9v26h37v-98l12-24v-15h40l13,14-1,129h13v-59h6v-17h9l10,8v6h10l-1,63h8l10-13,1-66h4l4-5h15v7h7v73h36v-107h18l4,3h28l8,9-1,95h11v-30h8v-8h11l12,8v29h16v-72h6v-25h37l10,11v47h25l1-169h3v-10h22l13,5v178h33v-47l26-38h36v12h9v30h10l25-9-1,10h11v20h7v-73l7-14h29v7h14v43l15-10h16v7h21v15h7v-7l7-8h17v8h11l6,5v17h8v-11l24-11h16v8l25,8v10h7l-1,49h3v-13h6v-43l4-7h12v7h4v38h6v-56h32l4,15v17h3l-1,46h10v-7h3l1-16h3v-62h25l4,38,10,25v24h7v-13h12v-7l40-8h10v9h11l-1,22h9v-20h6l1-32,30-85h26v68h15l-1,52h9v-65h23l21,7v24h11v-18l16-9h15l-1,58h23v-66l4-6h23v11h26v67h12l13,20v-24l7-10h10v66.074Z" transform="translate(-59 209.091)" fill="#001c46"/>
+    <g id="layer_1" data-name="layer 1" transform="translate(0 -23)">
+      <path id="Path_55" data-name="Path 55" d="M508,180.415v-27h0l16-23h25v19h15v-47h60v43h7v-4h18v-6h34l13,6h0v4h17v-31h0l28-8h47v47h5v-12h22v-5h0l9-6h16v-53h32v-5h11l16,6h0v8h28v-5l14-13h56v13h8v-29h0l5-5h6v-10h23l6,12h0v43h8v21h12l40-54v26h4v-7h50l6,7h0v65l7,10h6v-17h4v-13h0l4-5h9l7,4v23h9v-21l15-8h29v6h10v19h19v-12l39,7h8v-4l26-4h16v22h6v-4l7-5h39l10,8v7h10v-3h23v20H508Z" transform="translate(-508 602.585)"/>
+      <path id="Path_57" data-name="Path 57" d="M1468,180.415v-27h-16l-25-23v19h-15v-47l-61,43h-6l-18-4v-6h-34l-13,6v4h-18v-31l-27-8h-47v47h-5l-22-12v-5l-9-6h-17v-53h-32v-5h-11l-15,6v8l-19-5h-10v4h-14v-17l-56,13H966v-29l-6-5v-10H937l-7,12-3,28-4,15v21H911v-53h-7v-5H891l-20,4v26h-4v-7H816l-5,7v65l-7,10h-6v-17h-9v-18h-9l-7,4v23h-9v-21l-8-6h-7v4l-21-6h-7v6H711v19H691v-12H652v7h-8v-4l-25-4H603v22h-7v-4l-7-5H551l-10,8v7H530v-3H508v20Z" transform="translate(452 602.585)"/>
+    </g>
+  </g>
+</svg>

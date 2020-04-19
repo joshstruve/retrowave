@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Saira:700');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800;900&family=Sedgwick+Ave+Display&display=swap');
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #000;
+    height: 100vh;
+    font-family: 'Saira', sans-serif; 
+	font-weight: 700;
+}
+
+img {
+    position: fixed;
+    width: 100%;
+    top: 30%;
+    transition: top 1s;
+}
+
+.wrapper {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+
+}
+
+.grid-container {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.grid {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0px, rgba(246,1,157, .5) 0%, rgba(246,1,157, 0.5) 2px, rgba(0, 0, 0, 0) 0px), linear-gradient(90deg, rgba(0, 0, 0, 0) 0px, rgba(246,1,157, 0.5) 0%, rgba(246,1,157, 0.5) 2px, rgba(0, 0, 0, 0) 0px); 
+    background-size: 4em 2em, 4em 2em;
+    background-color: black;
+    height: 40em;
+    perspective: 1000px;
+    margin-top: 20em;
+    transform: perspective(150px) rotateX(45deg) scale(3);
+    }
+
+h1 {
+    background: linear-gradient(to bottom,  #ebf1f6 0%,#abd3ee 50%,#859ee2 51%,#d5ebfb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=0 ); /* IE6-9 */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2em;
+    transition: font-size 1s;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+h1::after {
+    background: none;
+    content: attr(data-text);
+    left: 0;
+    position: absolute;
+    text-shadow: 1px -1px 0 rgba(255,255,255,0.5),
+    3px 1px 3px rgba(246,1,157,0.85), 
+    -3px -2px 3px rgba(0,0,255,0.85),
+    1px -2px 0 rgba(246,1,157,0.8);
+    z-index: -3;
+}
+
+h1::before {
+    content: ' ';
+    position: absolute;
+    top: -1em;
+    left: 0;
+    width: 8em;
+    height: 4.7em;
+    /*background: url("images/triangle.svg") no-repeat;*/
+    background-size: 7em;
+    z-index: -4;
+}
+
+h2 {
+    text-shadow: 1px -1px 0 rgba(151,0,204,0.5),
+    2px 1px 2px rgba(151,0,204,0.85), 
+    -3px -2px 3px rgba(151,0,204,0.85),
+    1px -2px 0 rgba(151,0,204,0.8);
+    color: rgb(255,255,255);
+    font-size: 1em;
+    position: absolute;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-weight: 100;
+    transition: font-size 1s;
+    margin-top: 5em;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.27861;
+  }
+  5% {
+    opacity: 0.34769;
+  }
+  10% {
+    opacity: 0.23604;
+  }
+  15% {
+    opacity: 0.90626;
+  }
+  20% {
+    opacity: 0.18128;
+  }
+  25% {
+    opacity: 0.83891;
+  }
+  30% {
+    opacity: 0.65583;
+  }
+  35% {
+    opacity: 0.67807;
+  }
+  40% {
+    opacity: 0.26559;
+  }
+  45% {
+    opacity: 0.84693;
+  }
+  50% {
+    opacity: 0.96019;
+  }
+  55% {
+    opacity: 0.08594;
+  }
+  60% {
+    opacity: 0.20313;
+  }
+  65% {
+    opacity: 0.71988;
+  }
+  70% {
+    opacity: 0.53455;
+  }
+  75% {
+    opacity: 0.37288;
+  }
+  80% {
+    opacity: 0.71428;
+  }
+  85% {
+    opacity: 0.70419;
+  }
+  90% {
+    opacity: 0.7003;
+  }
+  95% {
+    opacity: 0.36108;
+  }
+  100% {
+    opacity: 0.24387;
+  }
+}
+
+.crt::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 11;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+}
+
+.crt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 11;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+.crt {
+animation: textShadow 1.6s infinite;
+}
+
+@media only screen and (min-width: 768px) {
+
+    img {
+        top: 17%;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+  }
+
+  @media only screen and (min-width: 950px) {
+    body {
+        background-position: 50% 0%;
+    }
+    
+  }
+
+  @media only screen and (min-width: 1100px) {
+    
+    img {
+        top: 8%;
+    }
+
+  }
+
+  @media only screen and (min-width: 1500px) {
+    
+    img {
+        top: -5%;
+    }
+
+  }
